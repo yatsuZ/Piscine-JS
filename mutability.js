@@ -6,7 +6,7 @@ const person = {
   }
 */
 const namev = person.name
-const ageClone1 = person.age +1
+const ageClone1 = person.age +2
 const ageClone2 = person.age +2
 
 const clone1 = {
