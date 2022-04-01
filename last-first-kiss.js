@@ -8,7 +8,7 @@ function kiss(L,l){
     if (!l){
         return [first(L),last(L)]
     } else {
-        return [first(L),last(l)]
+        return [first(L),last(L),first(l),last(L)]
     }
 }
 console.log(kiss([5,9,9,4,9,4],[5]))
