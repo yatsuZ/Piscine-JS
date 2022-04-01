@@ -11,5 +11,5 @@ const obj = {
 
 const nested = {
     arr:[4,undefined,'2'],
-    obj:{str:"oki",num:10,bool:true}
+    obj:{str:"oki",num:5,bool:true}
 }
