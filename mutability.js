@@ -4,4 +4,4 @@ const person = {
 }
 
 var clone1,clone2,samePersone = person
-
+fpknerpikngf
