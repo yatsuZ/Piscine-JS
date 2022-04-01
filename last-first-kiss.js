@@ -4,11 +4,7 @@ function first(L) {
 function last(L) {
     return L[L.length-1]
 }
-function kiss(L,l){
-    if (!l){
-        return [first(L),last(L)]
-    } else {
-        return [first(L),last(L),first(l),last(L)]
-    }
+function kiss(L,){
+    return [first(L)]+[last(L)]
 }
-console.log(kiss([5,9,9,4,9,4],[5]))
+//console.log([kiss([1, 2, 3, 4, 5, 6]) ],[6, 1])
