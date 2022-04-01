@@ -1,6 +1,6 @@
-const more=(nombre=Number) => nombre++
-const less=(nombre=Number) => nombre--
-const add=(nombre=Number,nombre2=Number) => nombre+nombre2
-const sub=(nombre=Number,nombre2=Number) => nombre-nombre2
+const more=(nombre) => nombre++
+const less=(nombre) => nombre--
+const add=(nombre,nombre2) => nombre+nombre2
+const sub=(nombre,nombre2) => nombre-nombre2
 
 
