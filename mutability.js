@@ -1,7 +1,12 @@
 const person = {
+    name: 'Rick',
+    age: 77,
+    country: 'US',
+  }
+var clone1= person
+var clone2 = person
+var samePerson={
     name:"Jason",
-    age:17,
-    country:'FR'
+    age:50,
+    country:"FR"
 }
-
-var samePersone,clone2,clone1 = person,clone1,clone2
