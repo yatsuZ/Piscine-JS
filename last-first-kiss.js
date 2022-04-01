@@ -7,4 +7,4 @@ function last(L) {
 function kiss(L,){
     return [first(L)],[last(L)]
 }
-console.log(eq(kiss([1, 2, 3, 4, 5, 6]), [6, 1]))
+console.log(kiss([1, 2, 3, 4, 5, 6]), [6, 1])
