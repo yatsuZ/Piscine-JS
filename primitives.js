@@ -1,4 +1,4 @@
-str="salut"
-num=10
-bool=true
-undef =undefined
+const str="oki"
+const num=10
+const bool=true
+const undef=undefined
