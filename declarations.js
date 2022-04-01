@@ -1,9 +1,15 @@
-const escapeStr = ["`","\\","/","\"","\'"]
+const escapeStr = "`\\/\"\'"
 
 const arr = [4,'2']
 
-const obj = new Object();
-    obj.str="oki"
-    obj.num=10
-    obj.bool=true
-    obj.undef=undefined
+const obj = {
+    str:"oki",
+    num:10,
+    bool:true,
+    undef:undefined
+}
+
+const nested = {
+    arr:[4,undefined,'2'],
+    obj:{str,num,bool}
+}
