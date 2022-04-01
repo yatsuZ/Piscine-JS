@@ -19,11 +19,7 @@ const clone2 = {
     age:ageClone2,
     country: 'FR'
 }
-const samePerson= {
-    name:person.name,
-    age:person.age,
-    country:'FR'
-}
+const samePerson= person
 /*
 console.log(clone1)
 console.log(clone2)
