@@ -15,11 +15,7 @@ const clone2 = {
     age:person.age,
     country: person.name
 }
-const samePerson= {
-    name:person.name,
-    age:person.age,
-    country: person.name
-}
+const samePerson= person
 person.age++
 person.country = "FR"
 /*
