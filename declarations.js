@@ -11,7 +11,7 @@ const obj = {
 
 const nested = {
     arr:[4,undefined,'2'],
-    obj:{str:"oki",num:5,bool:true}
+    obj:obj
 }
 
 Object.freeze(nested)
