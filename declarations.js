@@ -4,7 +4,7 @@ const arr = [4,'2']
 
 const obj = {
     str:"oki",
-    num:10,
+    num:5,
     bool:true,
     undef:undefined
 }
