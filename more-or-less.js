@@ -1,14 +1,6 @@
-function more(nombre=Number) {
-    return nombre+1
-}
-function less(nombre=Number) {
-    return nombre-1
-}
-function add(nombre=Number,nombre2=Number) {
-    return nombre+nombre2
-}
-function sub(nombre=Number,nombre2=Number) {
-    return nombre-nombre2
-}
+const more=(nombre=Number) => nombre+1
+const less=(nombre=Number) => nombre--
+const add=(nombre=Number,nombre2=Number) => nombre+nombre2
+const sub=(nombre=Number,nombre2=Number) => nombre-nombre2
 
 
