@@ -3,17 +3,17 @@ const person = {
     age: 77,
     country: 'US',
   }
-var clone1= {
+const clone1= {
     name: 'Rick',
     age: 77,
     country: 'US',
   }
-var clone2 = {
+const clone2 = {
     name: 'Rick',
     age: 77,
     country: 'US',
   }
-var samePerson={
+const samePerson={
     name:"Jason",
     age:50,
     country:"FR"
