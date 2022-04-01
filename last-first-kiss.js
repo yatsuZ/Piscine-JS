@@ -11,4 +11,4 @@ function kiss(L,l){
         return [first(L),last(l)]
     }
 }
-//console.log(kiss([5,9,9,4,9,4]))
+console.log(kiss([5,9,9,4,9,4],[5]))
