@@ -11,8 +11,9 @@ function get(key) {
 }
 
 function set(key=String,value) {
-    sourceObject[key]=value
+    return sourceObject[key]=value
+    
 }
-// sourceObject.log(get("str"))
-// sourceObject.log(set("str","sa passe"))
-// sourceObject.log(get("str"))
+//  sourceObject.log(get("str"))
+//  sourceObject.log(set('num', 55), 55)
+//  sourceObject.log(get("num"))
