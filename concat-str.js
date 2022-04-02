@@ -5,4 +5,4 @@ function concatStr(a,b) {
     return a+b
 }
 
-//console.log(concatStr('a ','bon'))
+console.log(concatStr(1, 2))
