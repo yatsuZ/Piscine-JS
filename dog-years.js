@@ -32,21 +32,21 @@ const neptune ={
 }
 function dogYears(Planet,Age_Second) {
     if (Planet == "earth"){
-        return (((Math.round(Age_Second/31557600*100)/100)*7)*100-1)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "mercury"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "venus"){
-        return Math.round((((Math.round(Age_Second/venus.Time*100)/100)*7)*100-1))/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "mars"){
-        return Math.round((((Math.round(Age_Second/mars.Time*100)/100)*7)*100)+3)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "jupiter"){
-        return (((Math.round(Age_Second/jupiter.Time*100)/100)*7)*100-1)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "saturn") {
-        return Math.round((((Math.round(Age_Second/saturn.Time*100)/100)*7)*100)+2)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "uranus") {
-        return Math.round((((Math.round(Age_Second/uranus.Time*100)/100)*7)*100)-3)/100
+        return Math.round((Age_Second/earth.Time)*700)/100
     }else if (Planet == "neptune"){
-        return Math.round((((Math.round(Age_Second/neptune.Time*100)/100)*7)*100))/100//booooo c'est nul j'ai fais que cas par cas >:(
+        return Math.round((Age_Second/earth.Time)*700)/100
     }
 }
 //console.log(dogYears('mars', 2129871239), 251.19)
