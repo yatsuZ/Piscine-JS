@@ -4,17 +4,17 @@ function dogYears(Planet,Age_Second) {
     }else if (Planet == "mercury"){
         return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100)/100
     }else if (Planet == "venus"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/venus.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "mars"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/mars.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "jupiter"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/jupiter.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "saturn") {
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/saturn.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "uranus") {
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/uranus.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "neptune"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
+        return (((Math.round(Age_Second/neptune.Time*100)/100)*7)*100-1)/100
     }
 }
 console.log(dogYears('earth', 1000000000), 221.82)
