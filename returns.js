@@ -1,7 +1,7 @@
 function id(x) {
     return x
 }
-
+tyjmr^hp
 function getLength(l) {
     return l.length
 }
