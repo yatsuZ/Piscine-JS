@@ -1,6 +1,7 @@
 function concatStr(a,b) {
     if (a[0] == undefined || b[0] == undefined) {
-        return
+        a=String(a)
+        b =String(b)
     }
     return a+b
 }
