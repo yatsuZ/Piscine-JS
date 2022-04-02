@@ -1,6 +1,6 @@
 function dogYears(Planet,Age_Second) {
     if (Planet == "earth"){
-        return (Math.floor((Age_Second/31557600)*100)/100)*7
+        return (Math.floor(Age_Second/31557600)*100/100)*7
     }else if (Planet == "mercury"){
         return (Math.floor((Age_Second/mercury.Time)*100)/100)*7-0.01
     }else if (Planet == "venus"){
