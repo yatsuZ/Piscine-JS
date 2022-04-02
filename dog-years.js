@@ -1,23 +1,23 @@
 function dogYears(Planet,Age_Second) {
     if (Planet == "earth"){
-        return (Math.floor(Age_Second/31557600*100)/100)*7
+        return (((Math.round(Age_Second/31557600*100)/100)*7)*100-1)/100
     }else if (Planet == "mercury"){
-        return (Math.floor((Age_Second/mercury.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "venus"){
-        return (Math.floor((Age_Second/venus.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "mars"){
-        return (Math.floor((Age_Second/mars.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "jupiter"){
-        return (Math.floor((Age_Second/jupiter.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "saturn") {
-        return (Math.floor((Age_Second/saturn.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "uranus") {
-        return (Math.floor((Age_Second/uranus.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }else if (Planet == "neptune"){
-        return (Math.floor((Age_Second/neptune.Time)*100)/100)*7-0.01
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100-1)/100
     }
 }
-
+console.log(dogYears('earth', 1000000000), 221.82)
 const earth ={
     Orbite: 1,
     Time :31557600
@@ -51,7 +51,7 @@ const neptune ={
     Time : earth.Time*164.79132
 }
 //je me suis trompé de commit
-//console.log(dogYears('earth', 1000000000), 221.82)
+
 
 // mercury : orbital period 0.2408467 Earth years
 // venus : orbital period 0.61519726 Earth years
