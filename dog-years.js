@@ -1,5 +1,21 @@
 function dogYears(Planet,Age_Second) {
-    return (Math.round((Age_Second/Planet.Time)*100)/100)*7
+    if (Planet == "earth"){
+        return (Math.round((Age_Second/31557600)*100)/100)*7
+    }else if (Planet == "mercury"){
+        return (Math.round((Age_Second/mercury.Time)*100)/100)*7;
+    }else if (Planet == "venus"){
+        return (Math.round((Age_Second/venus.Time)*100)/100)*7
+    }else if (Planet == "mars"){
+        return (Math.round((Age_Second/mars.Time)*100)/100)*7
+    }else if (Planet == "jupiter"){
+        return (Math.round((Age_Second/jupiter.Time)*100)/100)*7
+    }else if (Planet == "saturn") {
+        return (Math.round((Age_Second/saturn.Time)*100)/100)*7
+    }else if (Planet == "uranus") {
+        return (Math.round((Age_Second/uranus.Time)*100)/100)*7
+    }else if (Planet == "neptune"){
+        return (Math.round((Age_Second/neptune.Time)*100)/100)*7
+    }
 }
 
 const earth ={
@@ -35,7 +51,7 @@ const neptune ={
     Time : earth.Time*164.79132
 }
 //je me suis trompé de commit
-//console.log(dogYears(mercury,1000000000))
+//console.log(dogYears('earth', 1000000000), 221.82)
 
 // mercury : orbital period 0.2408467 Earth years
 // venus : orbital period 0.61519726 Earth years
