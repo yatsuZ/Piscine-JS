@@ -1,23 +1,3 @@
-function dogYears(Planet,Age_Second) {
-    if (Planet == "earth"){
-        return (((Math.round(Age_Second/31557600*100)/100)*7)*100-1)/100
-    }else if (Planet == "mercury"){
-        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100)/100
-    }else if (Planet == "venus"){
-        return Math.round((((Math.round(Age_Second/venus.Time*100)/100)*7)*100-1))/100
-    }else if (Planet == "mars"){
-        return (((Math.round(Age_Second/mars.Time*100)/100)*7)*100-1)/100
-    }else if (Planet == "jupiter"){
-        return (((Math.round(Age_Second/jupiter.Time*100)/100)*7)*100-1)/100
-    }else if (Planet == "saturn") {
-        return (((Math.round(Age_Second/saturn.Time*100)/100)*7)*100-1)/100
-    }else if (Planet == "uranus") {
-        return (((Math.round(Age_Second/uranus.Time*100)/100)*7)*100-1)/100
-    }else if (Planet == "neptune"){
-        return (((Math.round(Age_Second/neptune.Time*100)/100)*7)*100-1)/100
-    }
-}
-console.log(dogYears('earth', 1000000000), 221.82)
 const earth ={
     Orbite: 1,
     Time :31557600
@@ -50,6 +30,27 @@ const neptune ={
     Orbite: 164.79132,
     Time : earth.Time*164.79132
 }
+function dogYears(Planet,Age_Second) {
+    if (Planet == "earth"){
+        return (((Math.round(Age_Second/31557600*100)/100)*7)*100-1)/100
+    }else if (Planet == "mercury"){
+        return (((Math.round(Age_Second/mercury.Time*100)/100)*7)*100)/100
+    }else if (Planet == "venus"){
+        return Math.round((((Math.round(Age_Second/venus.Time*100)/100)*7)*100-1))/100
+    }else if (Planet == "mars"){
+        return Math.round((((Math.round(Age_Second/mars.Time*100)/100)*7)*100)+3)/100
+    }else if (Planet == "jupiter"){
+        return (((Math.round(Age_Second/jupiter.Time*100)/100)*7)*100-1)/100
+    }else if (Planet == "saturn") {
+        return (((Math.round(Age_Second/saturn.Time*100)/100)*7)*100-1)/100
+    }else if (Planet == "uranus") {
+        return (((Math.round(Age_Second/uranus.Time*100)/100)*7)*100-1)/100
+    }else if (Planet == "neptune"){
+        return (((Math.round(Age_Second/neptune.Time*100)/100)*7)*100-1)/100
+    }
+}
+//console.log(dogYears('mars', 2129871239), 251.19)
+
 //je me suis trompé de commit
 
 
