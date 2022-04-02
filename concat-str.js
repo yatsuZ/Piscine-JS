@@ -1,5 +1,8 @@
-function concatStr(a=String,b=String) {
-    return [a]+[b]
+function concatStr(a,b) {
+    if (a[0] == undefined || b[0] == undefined) {
+        return
+    }
+    return a+b
 }
-test
-//console.log(length(5))
+
+//console.log(concatStr('a ','bon'))
