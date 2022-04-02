@@ -34,7 +34,7 @@ const neptune ={
     Orbite: 164.79132,
     Time : earth.Time*164.79132
 }
-
+//je me suis trompé de commit
 //console.log(dogYears(mercury,1000000000))
 
 // mercury : orbital period 0.2408467 Earth years
