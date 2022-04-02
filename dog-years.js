@@ -1,20 +1,20 @@
 function dogYears(Planet,Age_Second) {
     if (Planet == "earth"){
-        return (Math.ceil((Age_Second/31557600)*100)/100)*7
+        return (Math.floor((Age_Second/31557600)*100)/100)*7
     }else if (Planet == "mercury"){
-        return (Math.ceil((Age_Second/mercury.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/mercury.Time)*100)/100)*7-0.01
     }else if (Planet == "venus"){
-        return (Math.ceil((Age_Second/venus.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/venus.Time)*100)/100)*7-0.01
     }else if (Planet == "mars"){
-        return (Math.ceil((Age_Second/mars.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/mars.Time)*100)/100)*7-0.01
     }else if (Planet == "jupiter"){
-        return (Math.ceil((Age_Second/jupiter.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/jupiter.Time)*100)/100)*7-0.01
     }else if (Planet == "saturn") {
-        return (Math.ceil((Age_Second/saturn.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/saturn.Time)*100)/100)*7-0.01
     }else if (Planet == "uranus") {
-        return (Math.ceil((Age_Second/uranus.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/uranus.Time)*100)/100)*7-0.01
     }else if (Planet == "neptune"){
-        return (Math.ceil((Age_Second/neptune.Time)*100)/100)*7-0.01
+        return (Math.floor((Age_Second/neptune.Time)*100)/100)*7-0.01
     }
 }
 
