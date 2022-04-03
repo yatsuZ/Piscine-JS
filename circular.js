@@ -1,5 +1,5 @@
 const circular = {
-    constructor: Number
+    constructor: Object
 }
 // circular.constructor= 5
 // console.log(circular.constructor)
