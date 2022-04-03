@@ -1,5 +1,5 @@
 const circular = {
-    constructor:undefined
-} 
-
-//console.log(circular.constructor)
+    constructor: Number
+}
+// circular.constructor= 5
+// console.log(circular.constructor)
