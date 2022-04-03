@@ -1,5 +1,3 @@
-const circular ={
-    circular:undefined
-}
-// circular.circular=10
-// console.log(circular.circular)
+var circular = undefined
+// circular=10
+// console.log(circular)
