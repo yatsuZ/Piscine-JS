@@ -1,5 +1,5 @@
+const circular = {
+    
+}
 
-let circular = undefined
-circular.constructor = Object
-
-//console.log(circular)
+console.log(circular)
