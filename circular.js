@@ -1,5 +1,5 @@
 const circular = {
-    circular : Object
+    circular : "circular"
 }
 
 console.log(circular)
