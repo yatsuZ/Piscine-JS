@@ -1,5 +1,6 @@
 const circular = {
-    circular : "circular.circular"
+    circular:{
+        Object
+    }
 }
-
 console.log(circular)
