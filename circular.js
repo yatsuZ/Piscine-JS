@@ -1,4 +1,3 @@
-const circular = {
-    Object
-}
+const circular = Object
+
 //console.log(circular)
