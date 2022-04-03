@@ -1,4 +1,4 @@
 const circular = {
-    constructor: Object
+    Object
 }
 //console.log(circular)
