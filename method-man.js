@@ -5,7 +5,7 @@ function words(phrase) {
         if (phrase[i]==" "){
             if (mots != ""){
                 L.push(mots);
-                if (mots != "Hello"){//mots.length>1){
+                if (mots == "Hello"){//mots.length>1){
                     L.push("")
                 }
                 mots = ""
