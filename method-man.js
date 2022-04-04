@@ -62,5 +62,5 @@ function capitalize(pHRASE){
     return Phrase
 }
 //console.log(yel("esque sa marche??"));
-console.log(capitalize("lA du COUP ? ")); // Foo
+// console.log(capitalize("lA du COUP ? ")); // Foo
 
