@@ -54,10 +54,14 @@ function capitalize(pHRASE){
             Phrase += " "
         }
         for (var j in p_H_R_A_S_E[i]){
-            if (j==0){
-                Phrase += p_H_R_A_S_E[i][j].toUpperCase()
+            if (i==0){
+                if (j==0){
+                    Phrase += p_H_R_A_S_E[i][j].toUpperCase()
+                }else{
+                    Phrase += p_H_R_A_S_E[i].charAt(j).toLowerCase()
+                }
             }else{
-                Phrase += p_H_R_A_S_E[i].charAt(j).toLowerCase()
+                Phrase += p_H_R_A_S_E.toLowerCase()
             }
         }
     }
