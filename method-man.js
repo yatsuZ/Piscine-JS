@@ -6,7 +6,7 @@ function words(phrase) {
             if (mots != ""){
                 L.push(mots)
                 mots = ""
-                L.push("")
+//                L.push("")
             }
         }
         else {
