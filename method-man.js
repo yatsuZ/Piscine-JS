@@ -53,20 +53,21 @@ function capitalize(pHRASE){
         if (i!=0){
             Phrase += " "
         }
+        if (i==0){
         for (var j in p_H_R_A_S_E[i]){
-            if (i==0){
+            
                 if (j==0){
                     Phrase += p_H_R_A_S_E[i][j].toUpperCase()
                 }else{
                     Phrase += p_H_R_A_S_E[i].charAt(j).toLowerCase()
                 }
-            }else{
-                Phrase += p_H_R_A_S_E.toLowerCase()
             }
+        }else{
+            Phrase += p_H_R_A_S_E[i].toLowerCase()            
         }
     }
     return Phrase
 }
 //console.log(yell("esque sa marche??"));
-//  console.log(words(`${r} ${r} ${r}`), [r, r, r]); // Foo
+// console.log(capitalize('zap ZAP'), 'Zap zap'); // Foo
 
