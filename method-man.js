@@ -4,9 +4,11 @@ function words(phrase) {
     for (var i in phrase){
         if (phrase[i]==" "){
             if (mots != ""){
-                L.push(mots)
+                L.push(mots);
+                if (mots.length>1){
+                    L.push("")
+                }
                 mots = ""
-                L.push("")
             }
         }
         else {
@@ -62,5 +64,5 @@ function capitalize(pHRASE){
     return Phrase
 }
 //console.log(yel("esque sa marche??"));
-// console.log(capitalize("lA du COUP ? ")); // Foo
+//  console.log(words('a b c'), ['a', 'b', 'c']); // Foo
 
