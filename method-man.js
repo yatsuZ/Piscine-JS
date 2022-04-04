@@ -6,6 +6,7 @@ function words(phrase) {
             if (mots != ""){
                 L.push(mots)
                 mots = ""
+                L.push("")
             }
         }
         else {
@@ -61,5 +62,5 @@ function capitalize(pHRASE){
     return Phrase
 }
 //console.log(yel("esque sa marche??"));
-//console.log(capitalize("eSque sA marChe ??")); // Foo
+console.log(capitalize("lA du COUP ? ")); // Foo
 
