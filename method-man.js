@@ -34,7 +34,7 @@ function sentence(L){
     return Phrase
 }
 
-function yel(string) {
+function yell(string) {
     var STRING = ""
     STRING += string.toUpperCase()
     return STRING
@@ -63,6 +63,6 @@ function capitalize(pHRASE){
     }
     return Phrase
 }
-//console.log(yel("esque sa marche??"));
+//console.log(yell("esque sa marche??"));
 //  console.log(words(`${r} ${r} ${r}`), [r, r, r]); // Foo
 
