@@ -47,8 +47,8 @@ function whisper(STRING) {
   }
 
 function capitalize(pHRASE){
-    p_H_R_A_S_E = words(pHRASE)
-    Phrase =""
+    var p_H_R_A_S_E = words(pHRASE)
+    var Phrase =""
     for (var i in p_H_R_A_S_E){
         if (i!=0){
             Phrase += " "
