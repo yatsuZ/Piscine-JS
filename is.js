@@ -1,5 +1,5 @@
 // is.num value is a number
-is.num = (arg) => typeof(arg)==="number" ? true:false
+is.num = (arg) => typeof(arg)==="number" ? true:false//operateur ternaire
 // is.nan value is NaN
 is.nan = (arg) => Number.isNaN(arg) ? true:false
 // is.str value is a string
@@ -13,7 +13,7 @@ is.def = (arg) => typeof(arg)!="undefined" ? true:false
 // is.arr value is an array
 is.arr = (arg) => Array.isArray(arg) ? true:false
 // is.obj value is a simple object or null objects
-is.obj = (arg) => typeof(arg)==="object" || typeof(arg)==="null objects" ? true:false
+is.obj = (arg) => typeof(arg)==="object" ? true:false
 // is.fun value is a function
 is.obj = (arg) => typeof(arg)==="function" ? true:false
 // is.truthy value is truthy
