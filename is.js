@@ -5,7 +5,7 @@ is.nan = (arg) => Number.isNaN(arg) ? true:false
 // is.str value is a string
 is.str = (arg) => typeof(arg)==="string" ? true:false
 // is.bool value is a boolean
-is.bool = (arg) => typeof(arg)==="bool" ? "true":"false"
+is.bool = (arg) => typeof(arg)==="bool" ? typeof(arg):""
 // is.undef value is undefined
 is.undef = (arg) => typeof(arg)==="undefined" ? true:false
 // is.def value is defined
