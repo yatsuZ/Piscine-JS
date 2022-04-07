@@ -11,7 +11,7 @@ is.undef = (arg) => typeof(arg)==="undefined" ? true:false
 // is.def value is defined
 is.def = (arg) => typeof(arg)!="undefined" ? true:false
 // is.arr value is an array
-is.arr = (arg) => typeof(arg)==="array" ? arg:""
+is.arr = (arg) => Array.isArray(arg) ? true:false
 // is.obj value is a simple object or null objects
 is.obj = (arg) => typeof(arg)==="object" || typeof(arg)==="null objects" ? true:false
 // is.fun value is a function
