@@ -3,7 +3,7 @@ function isPositive(N){
 }
 
 function abs(N){
-    if (isPositive(N)){
+    if (isPositive(N) || N ==0){
         return N
     }else{
         return N*-1
