@@ -1,5 +1,5 @@
 function isPositive(N){
-    return N>=0
+    return N>0
 }
 
 function abs(N){
