@@ -98,5 +98,19 @@ const reste=(a,b)=>{
         return reste(a-b,b)
     }
 }
+const multiply = (a,b) =>{
+    if (a<0 && b<0 || a>0 && b>0){
+        return multiply_positive(Math.abs(a),Math.abs(b))
+    }else{
+        return -multiply_positive(Math.abs(a),Math.abs(b))
+    }
+}
 
-//console.log(modulo(11,10));
+const multiply_positive=(a,b)=>{
+    if (0==a) {
+        return b
+    }else {
+        return b+multiply_positive(a-1,b)
+    }
+}
+// console.log(multiply(34, 78));
