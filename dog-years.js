@@ -49,7 +49,7 @@ function dogYears(Planet,Age_Second) {
         return Math.round((Age_Second/neptune.Time)*700)/100
     }
 }
-//console.log(dogYears('mars', 2129871239), 251.19)
+console.log(dogYears('mars', 2129871239), 251.19)
 
 //je me suis trompé de commit
 
