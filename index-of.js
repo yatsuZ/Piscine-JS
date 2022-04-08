@@ -7,7 +7,7 @@ const indexOf = (L,search,starte) =>{
             return i
         }
     }
-    return -1
+    // return -1
 }
 // const a = [1,2,3,5,12]
 // const b = a.length
