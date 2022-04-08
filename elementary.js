@@ -16,4 +16,32 @@ const multiply = (a,b) =>{
     return result
 }
 ///////////////////////////////////////////////////////
-//console.log(multiply(34, 78));
+const division_euclidiene=(dividende,diviseur) =>{
+    let quotien =0
+    let reste=0
+    let q = 0
+    while(diviseur<dividende){
+        // console.log(diviseur);
+        // console.log(dividende);
+        if (multiply(diviseur,q)>dividende){
+            q--
+            dividende -= multiply(diviseur,q)
+            quotien += q
+            q=0
+        }
+        q++
+    }
+    reste = dividende
+    // if (reste ==0){
+    //     return quotien
+    // }
+    return [quotien,reste]
+}
+
+const divide =(a,b)=>{
+    return division_euclidiene(a,b)[0]
+}
+const modulo = (a,b)=>{
+    return division_euclidiene(a,b)[1]
+}
+// console.log(divide(10,2));
