@@ -23,7 +23,7 @@ const division_euclidiene=(dividende,diviseur) =>{
     while(diviseur<dividende){
         // console.log(diviseur);
         // console.log(dividende);
-        if (multiply(diviseur,q)>dividende){
+        if (multiply(diviseur,q)>=dividende){
             q--
             dividende -= multiply(diviseur,q)
             quotien += q
