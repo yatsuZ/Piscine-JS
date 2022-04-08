@@ -9,13 +9,25 @@
 
 /////////////////////////////////////////////////
 
-// Iterative
+// Iterative avec while
+// const repeat =(S,N) => {
+//     var i = 0
+//     var s = ""
+//     while (i < N){
+//         s += S
+//         i++
+//     }
+//     return s
+// }
+
+///////////////////////////////////////////////////
+
+// Iterative avec for
+
 const repeat =(S,N) => {
-    var i = 0
     var s = ""
-    while (i < N){
+    for (let i = 0; i < N; i++){
         s += S
-        i++
     }
     return s
 }
