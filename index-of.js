@@ -1,4 +1,7 @@
 const indexOf = (L,search,starte) =>{
+    if (starte==undefined){
+        starte=0
+    }
     for (let i =0; i<L.length;i++){
         if (L[i]==search && i>=starte){
             return i
