@@ -14,5 +14,20 @@ const division_positive=(a,b)=>{
     }
 }
 
+const modulo=(a,b)=>{
+    if (a<0){
+        return -reste(Math.abs(a),Math.abs(b))
+    }else{
+        return reste(Math.abs(a),Math.abs(b))
+    }
+}
 
-//console.log(modulo(15,10));
+const reste=(a,b)=>{
+    if (a<b) {
+        return a
+    }else {
+        return reste(a-b,b)
+    }
+}
+
+//console.log(modulo(11,10));
