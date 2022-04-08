@@ -82,3 +82,4 @@ const reste=(a,b)=>{
         return reste(a-b,b)
     }
 }
+console.log(multiply(34, 78));
