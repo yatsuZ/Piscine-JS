@@ -48,7 +48,7 @@ const division_euclidiene=(dividende,diviseur) =>{
         t++
     }
     if (negatif) {
-        return[-q,-r]
+        return[-q,r]
     }else{
         return [q,r]
     }
