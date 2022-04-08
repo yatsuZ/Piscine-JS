@@ -51,7 +51,7 @@ const division_euclidiene=(dividende,diviseur) =>{
     }else if ( negatif_diviseur && negatif_dividende ) {
         return[q,r]
     }else if( negatif_dividende ){
-        return[-q,r]
+        return[-q,-r]
     }else if (negatif_diviseur){
         return[-q,r]
     }
