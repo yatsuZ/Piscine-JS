@@ -12,7 +12,7 @@
 // Iterative
 const repeat =(S,N) => {
     var i = 0
-    while (i < N){
+    while (i <= N){
         S+=S
     }
     return S
