@@ -43,9 +43,9 @@ const division_euclidiene=(dividende,diviseur) =>{
         t++
     }
     if (negatif) {
-        return[0-q,-r]
+        return[-q-1,-r]
     }else{
-        return [q,-r]
+        return [q-1,-r]
     }
 }
 
@@ -55,4 +55,4 @@ const divide =(a,b)=>{
 const modulo = (a,b)=>{
     return division_euclidiene(a,b)[1]
 }
-// console.log(division_euclidiene(100,-11));
+console.log(division_euclidiene(78, 34) );
