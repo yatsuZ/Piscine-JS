@@ -62,7 +62,7 @@ const divide =(a,b)=>{
 const modulo = (a,b)=>{
     return division_euclidiene(a,b)[1]
 }
-// console.log(division_euclidiene(-123, -22))
+console.log(division_euclidiene(-123, 22))
 // console.log(division_euclidiene(-123, 22)[1] == -13);
 // console.log(division_euclidiene(123, -22)[1] == 13)
 // console.log(division_euclidiene(-123, -22)[0] == (123,22)[0])
