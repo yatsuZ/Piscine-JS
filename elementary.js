@@ -67,7 +67,7 @@
 // // console.log(division_euclidiene(-123, 22)[1] == -13);
 // // console.log(division_euclidiene(123, -22)[1] == 13)
 // // console.log(division_euclidiene(-123, -22)[0] == (123,22)[0])
-const division= (a,b) =>{
+const divide= (a,b) =>{
     if (a<0 && b<0 || a>0 && b>0){
         return division_positive(Math.abs(a),Math.abs(b))
     }else{
@@ -113,4 +113,4 @@ const multiply_positive=(a,b)=>{
         return b+multiply_positive(a-1,b)
     }
 }
-// console.log(multiply(34, 78));
+// console.log(divide(34, 78));
