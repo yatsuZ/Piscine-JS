@@ -1,20 +1,18 @@
-function sign(n){
-    if (n==0){
-        return 0
-    }else if (n>0){
-        return 1
-    }else {
-        return -1
+const division= (a,b) =>{
+    if (a<0 && b<0 || a>0 && b>0){
+        return division_positive(Math.abs(a),Math.abs(b))
+    }else{
+        return -division_positive(Math.abs(a),Math.abs(b))
     }
 }
-const signe = (n) =>{
-    if (n==0){
+
+const division_positive=(a,b)=>{
+    if (b >a) {
         return 0
-    }else if (n>0){
-        return 1
     }else {
-        return -1
+        return 1+division(a-b,b)
     }
 }
-const a = 5
-console.log(typeof sign  === 'function'); 
+
+
+//console.log(modulo(15,10));
