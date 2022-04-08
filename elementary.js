@@ -47,7 +47,7 @@ const division_euclidiene=(dividende,diviseur) =>{
         t++
     }
     
-    if(negatif_dividende && negatif_diviseur) {
+    if((negatif_dividende && negatif_diviseur)|| negatif_dividende) {
         return[-q,-r]
     }else if (negatif_diviseur){
         return[-q,r]
@@ -62,7 +62,7 @@ const divide =(a,b)=>{
 const modulo = (a,b)=>{
     return division_euclidiene(a,b)[1]
 }
-console.log(division_euclidiene(-123, 22))
+// console.log(division_euclidiene(-123, -22))
 // console.log(division_euclidiene(-123, 22)[1] == -13);
 // console.log(division_euclidiene(123, -22)[1] == 13)
 // console.log(division_euclidiene(-123, -22)[0] == (123,22)[0])
