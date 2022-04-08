@@ -113,4 +113,4 @@ const multiply_positive=(a,b)=>{
         return b+multiply_positive(a-1,b)
     }
 }
-console.log(multiply(34, 78));
+// console.log(multiply(34, 78));
