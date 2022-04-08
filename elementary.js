@@ -17,6 +17,17 @@ const multiply = (a,b) =>{
 }
 ///////////////////////////////////////////////////////
 const division_euclidiene=(dividende,diviseur) =>{
+    let negatif = false
+    if (dividende<0 && diviseur<0){
+        dividende = 0 -dividende
+        diviseur = 0 - diviseur
+    }else if(dividende<0) {
+        dividende = 0-dividende
+        negatif=true
+    }else if(diviseur<0){
+        diviseur = 0-diviseur
+        negatif=true
+    }
     if (dividende < diviseur){
          return [0,dividende]
      }
@@ -34,7 +45,11 @@ const division_euclidiene=(dividende,diviseur) =>{
         }
         t++
     }
-    return [q,r]
+    if (negatif) {
+        return[0-q,0-r]
+    }else{
+        return [q,r]
+    }
 }
 
 const divide =(a,b)=>{
