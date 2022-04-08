@@ -16,4 +16,4 @@ const multiply = (a,b) =>{
     return result
 }
 ///////////////////////////////////////////////////////
-//console.log(multiply(2,2));
+console.log(multiply(34, 78));
