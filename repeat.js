@@ -12,8 +12,11 @@
 // Iterative
 const repeat =(S,N) => {
     var i = 0
-    while (i <= N){
-        S+=S
+    var s = ""
+    while (i < N){
+        s += S
+        i++
     }
-    return S
+    return s
 }
+// console.log(repeat('a', 3), "==="+" "+ 'aaa');
