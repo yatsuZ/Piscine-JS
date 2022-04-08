@@ -17,16 +17,17 @@ const multiply = (a,b) =>{
 }
 ///////////////////////////////////////////////////////
 const division_euclidiene=(dividende,diviseur) =>{
-    let negatif = false
+    let negatif_dividende = false
+    let negatif_diviseur = false
     if (dividende<0 && diviseur<0){
         dividende = 0 -dividende
         diviseur = 0 - diviseur
     }else if(dividende<0) {
         dividende = 0-dividende
-        negatif=true
+        negatif_dividende=true
     }else if(diviseur<0){
         diviseur = 0-diviseur
-        negatif=true
+        negatif_diviseur=true
     }
     if (dividende < diviseur){
          return [0,dividende]
@@ -47,7 +48,10 @@ const division_euclidiene=(dividende,diviseur) =>{
         }
         t++
     }
-    if (negatif) {
+    
+    if(negatif_dividende) {
+        return[-q,-r]
+    }else if (negatif_diviseur){
         return[-q,r]
     }else{
         return [q,r]
@@ -60,4 +64,7 @@ const divide =(a,b)=>{
 const modulo = (a,b)=>{
     return division_euclidiene(a,b)[1]
 }
-console.log(division_euclidiene(-123, 22) );
+// console.log(division_euclidiene(123, -22))
+// console.log(division_euclidiene(-123, 22)[1] == -13);
+// console.log(division_euclidiene(123, -22)[1] == 13)
+// console.log(division_euclidiene(-123, -22)[0] == (123,22)[0])
