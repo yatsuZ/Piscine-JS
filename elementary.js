@@ -79,7 +79,7 @@ const division_positive=(a,b)=>{
     if (b >a) {
         return 0
     }else {
-        return 1+division(a-b,b)
+        return division_positive(a-b,b)+1
     }
 }
 
@@ -113,4 +113,4 @@ const multiply_positive=(a,b)=>{
         return b+multiply_positive(a-1,b)
     }
 }
-// console.log(divide(34, 78));
+// console.log(divide(78, 34));
