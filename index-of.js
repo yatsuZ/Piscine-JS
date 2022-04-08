@@ -1,6 +1,6 @@
-const indexOf = (L,search) =>{
+const indexOf = (L,search,starte) =>{
     for (let i =0; i<L.length;i++){
-        if (L[i]==search){
+        if (L[i]==search && i>=starte){
             return i
         }
     }
