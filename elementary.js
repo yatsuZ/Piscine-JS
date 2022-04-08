@@ -17,25 +17,24 @@ const multiply = (a,b) =>{
 }
 ///////////////////////////////////////////////////////
 const division_euclidiene=(dividende,diviseur) =>{
-    let quotien =0
-    let reste=0
+    if (dividende < diviseur){
+         return [0,dividende]
+     }
+    let r = dividende
     let q = 0
-    while(diviseur<dividende){
-        // console.log(diviseur);
-        // console.log(dividende);
-        if (multiply(diviseur,q)>=dividende){
-            q--
-            dividende -= multiply(diviseur,q)
-            quotien += q
-            q=0
+    let t = 0
+    while (multiply(diviseur,q)<dividende){
+        if (multiply(diviseur,t)>=r){
+            if(multiply(diviseur,t) > r){
+                t--
+            }
+            r -= multiply(diviseur,t)
+            q += t
+            t=0
         }
-        q++
+        t++
     }
-    reste = dividende
-    // if (reste ==0){
-    //     return quotien
-    // }
-    return [quotien,reste]
+    return [q,r]
 }
 
 const divide =(a,b)=>{
@@ -44,4 +43,4 @@ const divide =(a,b)=>{
 const modulo = (a,b)=>{
     return division_euclidiene(a,b)[1]
 }
-// console.log(divide(10,2));
+// console.log(division_euclidiene(5,11));
