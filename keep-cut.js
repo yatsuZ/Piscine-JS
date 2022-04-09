@@ -14,7 +14,7 @@ const keepLast  = (S) =>{
     return S.slice(-2)
 }
 const keepFirstLast  = (S)=>{
-    if (S.length<=2){
+    if (S.length<=4){
         return S
     }
     return keepFirst(S)+keepLast(S)
