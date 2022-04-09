@@ -16,11 +16,16 @@ const slice = (L,Debut,Fin) =>{
     }
     for (let i = 0; i<Fin;i++){
         if (i>=Debut && i < L.length){
-            l = l+ L[i]
+            if (typeof(L)==="string"){
+                l = l+ L[i]
+            }else{
+                l.push(L[i])
+            }
+            
         }
     }
     return l
 }
 // const a = 'abcdef'
 // // console.log(a[0,2]);
-// console.log(slice('abcdef', 0, -2));
+// console.log(slice([1, 2, 3, 4, 5, 6], 2));
