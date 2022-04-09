@@ -12,7 +12,7 @@ const slice = (L,Debut,Fin) =>{
     if (Fin== undefined){
         Fin = L.length
     }else if (Fin<0){
-        Fin = L.length-Fin
+        Fin = L.length+Fin
     }
     for (let i = 0; i<Fin;i++){
         if (i>=Debut && i < L.length){
