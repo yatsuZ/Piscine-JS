@@ -6,9 +6,13 @@ const slice = (L,Debut,Fin) =>{
     let l = []
     if (Debut== undefined){
         Debut = 0
+    }else if (Debut<0){
+        Debut = L.length+Debut-1
     }
     if (Fin== undefined){
         Fin = L.length
+    }else if (Fin<0){
+        Fin = L.length-Fin
     }
     for (let i = 0; i<Fin;i++){
         if (i>=Debut && i < L.length){
@@ -19,4 +23,4 @@ const slice = (L,Debut,Fin) =>{
 }
 // const a = 'abcdef'
 // // console.log(a[0,2]);
-// console.log(slice(a, 2));
+// console.log(slice('abcdef', -2));
