@@ -16,7 +16,7 @@ const keepLast  = (S) =>{
 const keepFirstLast  = (S)=>{
     return keepFirst(S)+keepLast(S)
 }
-// console.log(cutFirst("salut"));
+console.log(keepFirstLast('af'));
 // console.log(cutLast("salutm"));
 // console.log(cutFirstLast("SAsalutVA"));
 // console.log(keepFirst("SAsalutVA"));
