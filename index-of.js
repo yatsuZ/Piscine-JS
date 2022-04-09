@@ -1,3 +1,4 @@
+
 const indexOf = (L,search,starte) =>{
     if (starte==undefined){
         starte=0
@@ -32,7 +33,3 @@ const includes = (L,search,starte) =>{
     }
     return false
 }
-// const a = [1,2,3,5,12]
-// const b = a.length
-// const t = (z0) => {return z0+1}
-// console.log(lastIndexOf([t, 0, 0, t], t, 2));
