@@ -7,7 +7,7 @@ const slice = (L,Debut,Fin) =>{
     if (Debut== undefined){
         Debut = 0
     }else if (Debut<0){
-        Debut = L.length+Debut-1
+        Debut = L.length+Debut
     }
     if (Fin== undefined){
         Fin = L.length
