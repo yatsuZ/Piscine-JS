@@ -14,9 +14,12 @@ const keepLast  = (S) =>{
     return S.slice(-2)
 }
 const keepFirstLast  = (S)=>{
+    if (S.length<=2){
+        return S
+    }
     return keepFirst(S)+keepLast(S)
 }
-console.log(keepFirstLast('af'));
+// console.log(keepFirstLast('af'));
 // console.log(cutLast("salutm"));
 // console.log(cutFirstLast("SAsalutVA"));
 // console.log(keepFirst("SAsalutVA"));
