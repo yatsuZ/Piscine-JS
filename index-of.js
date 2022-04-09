@@ -21,6 +21,17 @@ const lastIndexOf  = (L,search,starte) =>{
     }
     return -1
 }
+const includes = (L,search,starte) =>{
+    if (starte==undefined){
+        starte=0
+    }
+    for (let i =0; i<L.length;i++){
+        if (L[i]==search && i>=starte){
+            return true
+        }
+    }
+    return false
+}
 // const a = [1,2,3,5,12]
 // const b = a.length
 // const t = (z0) => {return z0+1}
