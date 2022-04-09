@@ -8,12 +8,15 @@ const slice = (L,Debut,Fin) =>{
         Debut = 0
     }
     if (Fin== undefined){
-        Fin = 0
+        Fin = L.length
     }
     for (let i = 0; i<Fin;i++){
-        if (i>Debut){
+        if (i>=Debut && i < L.length){
             l = l+ L[i]
         }
     }
     return l
 }
+// const a = 'abcdef'
+// // console.log(a[0,2]);
+// console.log(slice(a, 2));
