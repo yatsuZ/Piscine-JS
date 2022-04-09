@@ -23,4 +23,4 @@ const slice = (L,Debut,Fin) =>{
 }
 // const a = 'abcdef'
 // // console.log(a[0,2]);
-// console.log(slice('abcdef', -2));
+// console.log(slice('abcdef', 0, -2));
