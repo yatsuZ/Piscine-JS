@@ -5,7 +5,7 @@ const round = (N)=>{
     }
     N= N*symbole
     let ecart = N
-    while (ecart>1){
+    while (ecart>=1){
         // console.log(ecart)
         ecart -=1 
     }
@@ -24,24 +24,41 @@ const round = (N)=>{
 }
 
 const ceil = (N)=>{
+    let symbole = 1
+    if (N<0){
+        symbole = -1
+    }
+    N= N*symbole
     let ecart = N
-    while (ecart>1){
+    while (ecart>=1){
         ecart -=1 
     }
+    if (ecart==0){
+        return N
+    }
     ecart = 1-ecart
-    return N+ecart
+    return N+(ecart*symbole)
 }
 
 const floor = (N)=>{
-    let ecart = N
-    while (ecart>1){
+    let symbole = 1
+    if (N<0){
+        symbole = -1
+    }
+    let ecart = N*symbole
+    while (ecart>=1){
         ecart -=1 
     }
-    return N-ecart
+    if (ecart==0){
+        return N
+    }
+    return (N-ecart)*symbole
 }
 
 const trunc = (N)=>{
     return ceil(N)
 }
-
-// console.log(round(-5.9684526554465129));
+// let a = [3, -4, 2, -3, 0]
+// for (i=0;i<a.length;i++){
+//     console.log((floor(a[i])));
+// }
