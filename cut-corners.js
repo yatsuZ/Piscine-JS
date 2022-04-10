@@ -10,9 +10,9 @@ const round = (N)=>{
         ecart -=1 
     }
     let top = (1*symbole)-(ecart*symbole)
-    console.log(top);
+    // console.log(top);
     top = N+(top*symbole)
-    console.log(top);
+    // console.log(top);
     if (ecart == 0){
         return N
     }
