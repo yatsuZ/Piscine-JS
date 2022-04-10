@@ -41,25 +41,31 @@ const ceil = (N)=>{
 }
 
 const floor = (N)=>{
-    return N
-    // let symbole = 1
-    // if (N<0){
-    //     symbole = -1
-    // }
-    // let ecart = N*symbole
-    // while (ecart>=1){
-    //     ecart -=1 
-    // }
-    // if (ecart==0){
-    //     return N
-    // }
-    // return (N-ecart*symbole)
+    let symbole = 1
+    if (N<0){
+        symbole = -1
+    }
+    let ecart = N*symbole
+    while (ecart>=1){
+        ecart -=1 
+    }
+    if (ecart==0){
+        return N
+    }
+    if (symbole == -1){
+        return (N-(1-ecart))
+    }
+    return (N-ecart*symbole)
 }
 
 const trunc = (N)=>{
     return ceil(N)
 }
-// let a = [3, -3.2831853071795862, 2, -3.2831853071795862, 0]
+// let a = [3.141592653589793, -3.141592653589793, 2.718281828459045, -2.718281828459045, 0]
 // for (i=0;i<a.length;i++){
 //     console.log((floor(a[i])));
 // }
+// 3
+// -4
+// 2
+// -3
