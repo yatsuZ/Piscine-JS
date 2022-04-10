@@ -41,18 +41,19 @@ const ceil = (N)=>{
 }
 
 const floor = (N)=>{
-    let symbole = 1
-    if (N<0){
-        symbole = -1
-    }
-    let ecart = N*symbole
-    while (ecart>=1){
-        ecart -=1 
-    }
-    if (ecart==0){
-        return N
-    }
-    return (N-ecart*symbole)
+    return N
+    // let symbole = 1
+    // if (N<0){
+    //     symbole = -1
+    // }
+    // let ecart = N*symbole
+    // while (ecart>=1){
+    //     ecart -=1 
+    // }
+    // if (ecart==0){
+    //     return N
+    // }
+    // return (N-ecart*symbole)
 }
 
 const trunc = (N)=>{
