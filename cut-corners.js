@@ -6,8 +6,19 @@ const round = (N)=>{
     N= N*symbole
     let ecart = N
     while (ecart>=1){
-        // console.log(ecart)
-        ecart -=1 
+        if (ecart >= 100000){
+            ecart -=100000
+        }else if(ecart >= 10000) {
+            ecart -=10000
+        }else if(ecart >= 1000){
+            ecart -=1000
+        }else if(ecart >= 100){
+            ecart-=100
+        }else if(ecart >= 10){
+            ecart -=10
+        }else{
+            ecart -=1
+        } 
     }
     let top = (1*symbole)-(ecart*symbole)
     // console.log(top);
@@ -32,7 +43,19 @@ const floor = (N)=>{
     }
     let ecart = N*symbole
     while (ecart>=1){
-        ecart -=1 
+        if (ecart >= 100000){
+            ecart -=100000
+        }else if(ecart >= 10000) {
+            ecart -=10000
+        }else if(ecart >= 1000){
+            ecart -=1000
+        }else if(ecart >= 100){
+            ecart-=100
+        }else if(ecart >= 10){
+            ecart -=10
+        }else{
+            ecart -=1
+        } 
     }
     if (ecart==0){
         return N
@@ -50,7 +73,19 @@ const trunc = (N)=>{
     }
     let ecart = N*symbole
     while (ecart>=1){
-        ecart -=1 
+        if (ecart >= 100000){
+            ecart -=100000
+        }else if(ecart >= 10000) {
+            ecart -=10000
+        }else if(ecart >= 1000){
+            ecart -=1000
+        }else if(ecart >= 100){
+            ecart-=100
+        }else if(ecart >= 10){
+            ecart -=10
+        }else{
+            ecart -=1
+        } 
     }
     if (ecart==0){
         return N
@@ -67,7 +102,19 @@ const ceil = (N)=>{
     }
     let ecart = N*symbole
     while (ecart>=1){
-        ecart -=1 
+        if (ecart >= 100000){
+            ecart -=100000
+        }else if(ecart >= 10000) {
+            ecart -=10000
+        }else if(ecart >= 1000){
+            ecart -=1000
+        }else if(ecart >= 100){
+            ecart-=100
+        }else if(ecart >= 10){
+            ecart -=10
+        }else{
+            ecart -=1
+        } 
     }
     if (ecart==0){
         return N
