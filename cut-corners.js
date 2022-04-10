@@ -59,7 +59,21 @@ const floor = (N)=>{
 }
 
 const trunc = (N)=>{
-    return N
+    let symbole = 1
+    if (N<0){
+        symbole = -1
+    }
+    let ecart = N*symbole
+    while (ecart>=1){
+        ecart -=1 
+    }
+    if (ecart==0){
+        return N
+    }
+    if (symbole == -1){
+        return (N+ecart)
+    }
+    return (N-ecart*symbole)
 }
 // let a = [3.141592653589793, -3.141592653589793, 2.718281828459045, -2.718281828459045, 0]
 // for (i=0;i<a.length;i++){
