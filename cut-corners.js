@@ -59,13 +59,13 @@ const floor = (N)=>{
 }
 
 const trunc = (N)=>{
-    return ceil(N)
+    return N
 }
 // let a = [3.141592653589793, -3.141592653589793, 2.718281828459045, -2.718281828459045, 0]
 // for (i=0;i<a.length;i++){
-//     console.log((floor(a[i])));
+//     console.log(trunc(a[i]));
 // }
 // 3
-// -4
-// 2
 // -3
+// 2
+// -2
