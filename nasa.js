@@ -10,7 +10,7 @@ const nasa = (NBR) =>{
         }else{
             str+=i
         }
-        if (i!=NBR-1){
+        if (i!=NBR){
             str+=" "
         }
     }
