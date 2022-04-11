@@ -34,10 +34,13 @@ const split = (L,seperateur) =>{
 const join = (L,rassemblement)=>{
     let exit = ""
     for (let i = 0;i<L.length;i++){
-        exit+=L[i]+rassemblement
+        exit+=L[i]
+        if (i<L.length-1){
+            exit += rassemblement
+        }
     }
     return exit
 }
 
-// const test = 'ggg - ddd - b'  
-// console.log(split(test,' - '))
+// const test = ['ee', 'ff', 'g', ''] 
+// console.log(join(test,','))
