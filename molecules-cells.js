@@ -1,55 +1,31 @@
 const RNA = (DN) =>{
-    if (DN==""){
-        return DN
-    }
     let a = ""
-    if (DN[2]=="T"){
-        a +="U"
-    }else{
-        a+=DN[2]
-    }
-    if (DN[1]=="T"){
-        a +="U"
-    }else{
-        a+=DN[1]
-    }
-    if (DN[4]=="T"){
-        a +="U"
-    }else{
-        a+=DN[4]
-    }
-    if (DN[3]=="T"){
-        a +="U"
-    }else{
-        a+=DN[3]
+    for (let i=0;i<DN.length;i++){
+        if (DN[i]=="G"){
+            a+="C"
+        }else if (DN[i]=="C"){
+            a+="G"
+        }else if (DN[i]=="T"){
+            a+="A"
+        }else if (DN[i]=="A"){
+            a+="U"
+        }
     }
     return a
 }
 
 const DNA = (RN)=>{
-    if (RN==""){
-        return RN
-    }
     let a = ""
-    if (RN[2]=="U"){
-        a +="T"
-    }else{
-        a+=RN[2]
-    }
-    if (RN[1]=="U"){
-        a +="T"
-    }else{
-        a+=RN[1]
-    }
-    if (RN[4]=="U"){
-        a +="T"
-    }else{
-        a+=RN[4]
-    }
-    if (RN[3]=="U"){
-        a +="T"
-    }else{
-        a+=RN[3]
+    for (let i=0;i<RN.length;i++){
+        if (RN[i]=="G"){
+            a+="C"
+        }else if (DN[i]=="C"){
+            a+="G"
+        }else if (DN[i]=="A"){
+            a+="T"
+        }else if (DN[i]=="U"){
+            a+="A"
+        }
     }
     return a
 }
