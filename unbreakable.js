@@ -26,7 +26,11 @@ const split = (L,seperateur) =>{
                 i=fin-1
             }
         }
-        l.push(L.slice(fin,L.length))
+        if (fin != L.length){
+            l.push(element)
+        }else{
+            l.push(L.slice(fin,L.length))
+        }
     }
     return l
 }
