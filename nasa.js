@@ -20,6 +20,8 @@
 const nasa = (NBR,t) =>{
     if (t==undefined){
         let t=1
+    }else if(t>NBR){
+        return
     }
     let str = ""
     if (t%3==0 && t%5==0){
