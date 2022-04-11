@@ -26,10 +26,10 @@ const split = (L,seperateur) =>{
                 i=fin-1
             }
         }
-        l.push(element)
+        l.push(L.slice(fin,L.length))
     }
     return l
 }
 
-// const test = 'The quick brown fox jumps over the lazy dog.'
-// console.log(split(test,"h"))
+// const test = 'ggg - ddd - b'  
+// console.log(split(test,' - '))
