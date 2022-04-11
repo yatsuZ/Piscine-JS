@@ -1,4 +1,7 @@
 const RNA = (DN) =>{
+    if (DN==""){
+        return DN
+    }
     let a = ""
     if (DN[2]=="T"){
         a +="U"
@@ -24,6 +27,9 @@ const RNA = (DN) =>{
 }
 
 const DNA = (RN)=>{
+    if (RN==""){
+        return RN
+    }
     let a = ""
     if (RN[2]=="U"){
         a +="T"
