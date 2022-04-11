@@ -14,10 +14,10 @@ const split = (L,seperateur) =>{
             element =""
         }
     }else{
-        for (let i =0;i<=L.length;i++){
+        for (let i =0;i<L.length;i++){
             
             fin = m.length+i
-            
+
             if (L.slice(i,fin)!=m){
                 element += L[i]
             }else{
