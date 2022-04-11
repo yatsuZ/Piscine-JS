@@ -22,11 +22,11 @@ const nasa = (NBR,t) =>{
         let t=1
     }
     let str = ""
-    if (i%3==0 && i%5==0){
+    if (t%3==0 && t%5==0){
         str+="NASA"
-    }else if(i%3==0){
+    }else if(t%3==0){
         str+="NA"
-    }else if(i%5==0){
+    }else if(t%5==0){
         str+="SA"
     }else{
         str+=t
