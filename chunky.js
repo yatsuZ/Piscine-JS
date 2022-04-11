@@ -1,5 +1,5 @@
 const chunk = (L,diviseur) =>{
-    NBR=Math.ceil(L.length/diviseur)
+    const NBR=Math.ceil(L.length/diviseur)
     // console.log(NBR);
     let l = []
     let vase=[]
@@ -17,4 +17,4 @@ const chunk = (L,diviseur) =>{
     return l
 }
 
-// console.log(chunk(["yo","sa","marche?","OUAIP","proute","hahahaha"],1));
+// console.log(chunk(['a', 'b', 'c', 'd'], 2),"\n",[['a', 'b'], ['c', 'd']])
