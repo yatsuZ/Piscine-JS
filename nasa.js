@@ -1,6 +1,6 @@
 const nasa = (NBR) =>{
     let str=""
-    for (let i = 1; i<NBR-1;i++){
+    for (let i = 1; i<NBR;i++){
         if (i%3==0 && i%5==0){
             str+="NASA"
         }else if(i%3==0){
