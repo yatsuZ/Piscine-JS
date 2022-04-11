@@ -19,11 +19,11 @@ const DNA = (RN)=>{
     for (let i=0;i<RN.length;i++){
         if (RN[i]=="G"){
             a+="C"
-        }else if (DN[i]=="C"){
+        }else if (RN[i]=="C"){
             a+="G"
-        }else if (DN[i]=="A"){
+        }else if (RN[i]=="A"){
             a+="T"
-        }else if (DN[i]=="U"){
+        }else if (RN[i]=="U"){
             a+="A"
         }
     }
