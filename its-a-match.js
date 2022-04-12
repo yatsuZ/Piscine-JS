@@ -1,1 +1,1 @@
-var normal = 'hi'
+var normal =(blabla)=> 'hi'
