@@ -1,1 +1,1 @@
-var normal =(blabla)=> 'hi'
+const normal =(blabla)=> {return blabla=='hi'}
