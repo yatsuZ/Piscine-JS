@@ -10,6 +10,7 @@ const vowelDots = (s)=>{
     for (let i=0;i<s.length;i++){
         if (l[Ind]==s[i]){
             s=s.replace(l[Ind],l[Ind]+".")
+            Ind++
         }
     }
     return s
