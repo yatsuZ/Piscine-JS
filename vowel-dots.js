@@ -5,7 +5,7 @@
 // console.log(vowelDots("a"));
 let vowels = /[aeiou]/ig;
 const vowelDots = (s)=>{
-    let l = s.match(r7)
+    let l = s.match(vowels)
     let Ind =0
     for (let i=0;i<s.length;i++){
         if (l[Ind]==s[i]){
