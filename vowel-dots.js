@@ -3,7 +3,7 @@
 //     return s.replace(r7,".")
 // }
 // console.log(vowelDots("a"));
-let r7 = /[aeiou]/ig;
+let r7 = /vowels/ig;
 const vowelDots = (s)=>{
     let l = s.match(r7)
     let Ind =0
@@ -14,4 +14,4 @@ const vowelDots = (s)=>{
     }
     return s
 }
-console.log(vowelDots("a"));
+// console.log(vowelDots("a"));
