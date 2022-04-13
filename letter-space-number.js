@@ -1,9 +1,5 @@
-// \s=Matches whitespace characters: [\t\n\f\r\p{Z}]
-// \d=Matches digits: [0-9]
-// \W=Matches non-alphanumeric characters: [^\w]
-
 let verif= /\w\s\d\b/g//ma condition Regular expression
-
+//\w=une letrre 
 const letterSpaceNumber =(S)=>{
     let l=[]
     l = S.match(verif)

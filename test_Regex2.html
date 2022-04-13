@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Les expressions régulières, Quantifieur</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>1, 10, 100
+            On apprend à utiliser les regex en JavaScript
+        </p>
+        <p id="reg"></p>
+        <script>
+            var rec = document.querySelector('p').textContent;
+
+/////////////////////////////Partie Regular exprextio
+            //je ne cherche pas 10 je cherche un 1 suivide au moin de un 0
+            var test1 = /10+/g;//le + s'aplique juste qpres ce que je veux chercher
+            
+            var  Au_moin_1_X = /x+/;
+            var soit_e_ou_end =/
+
+////////////////////////////Methode apliquer
+            var res1 = rec.match(test1);
+            var res2 = Au_moin_1_X.test(rec)
+////////////////////////////Affichage
+            var resultat = document.getElementById('reg')
+            resultat.innerHTML='Résultat : '+res1+"<br><br>"+
+            "Au moin un X : "+res2;
+        </script>
+    </body>
+</html>

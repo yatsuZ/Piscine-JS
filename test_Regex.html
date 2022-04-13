@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Les expressions régulières</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>EngAgeZ vous qu'ils disaient,engagez  rengagez vous qu'ils disaient</p>
+        <p id="reg"></p>
+        <br>
+        <p id="rep"></p>
+        <script>
+            var expr=document.querySelector("p");
+
+            var r = /engagez/;//nimporte ou tant que c'est egale exactement a engagez
+            var r1 = /engagez/i;//i== majusule ou pas fais pas attention au majuscule
+            var r2 = /engagez/ig;//i +g= fait pas attention aux position
+
+            var res = expr.textContent.match(r);
+            var res1 = expr.textContent.match(r1)
+            var res2 = expr.textContent.match(r2)
+
+            var position =expr.textContent.search(r);
+            var position1 =expr.textContent.search(r1);
+            var position2 =expr.textContent.search(r2);
+
+            var resultat= document.getElementById('reg')
+            resultat.innerHTML= 'Resultat match() sur regex 0 : '+ res +
+            '<br>Resultat match() sur regex 1 : '+ res1 +
+            '<br>Resultat match() sur regex 2 : '+res2+
+            '<br><br>Resultat search() sur regex 0 : '+ position +
+            '<br>Resultat search() sur regex 1 : '+position1+
+            '<br>Resultat search() sur regex 2 : '+position2;
+
+            var r3 = /vous/;
+            var r4 = /vous/i;
+            var r5 = /vous/ig;
+            var r7 = /[aeiou]/ig;
+
+            var r6 = /ENGAGEZ/;
+            //et R1
+
+            var test = r6.test(expr.textContent)
+            var test1 = r1.test(expr.textContent)
+            var test3 = /aient/.exec(expr.textContent)
+
+            var replace=expr.textContent.replace(r3,"les")
+            var replace1=expr.textContent.replace(r4,"la")
+            var replace2=expr.textContent.replace(r5,"moi")
+            var replace3=expr.textContent.match(r7,".")
+
+            var resultat2=document.getElementById('rep')
+
+            resultat2.innerHTML='Resultat replace() sur regex 3 : '+ replace +
+            '<br>Resultat replace() sur regex 4 : '+ replace1 +
+            '<br>Resultat replace() sur regex 5 : '+replace2+
+            "<br><br>Resultat test() sur regex 6 : "+test+
+            "<br>Resultat test() sur regex 1 : "+test1+
+            "<br>Resultat exect() sur /aient/ : "+test3+
+            "<br>Resultat replace() sur regex 7 : "+replace3;
+
+
+        </script>
+    </body>
+</html>
