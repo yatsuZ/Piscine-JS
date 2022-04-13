@@ -7,6 +7,9 @@ let verif= /\w\s\d\b/g//ma condition Regular expression
 const letterSpaceNumber =(S)=>{
     let l=[]
     l = S.match(verif)
+    if (l==null){
+        return []
+    }
     return l
 }
-// console.log(letterSpaceNumber("du coup es que sa marche 1?"));//non sa marche pas >:(
+// console.log(letterSpaceNumber('I like 7up.'), [])
