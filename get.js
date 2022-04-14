@@ -1,3 +1,4 @@
+is.arr = (arg) => Array.isArray(arg) ? true:false
 const get = (src=Object,path=String) =>{
   // const reg = // a chaque fois qui a un point on coupe
   let trouver=false
@@ -6,6 +7,15 @@ const get = (src=Object,path=String) =>{
     
     if (path[fin]=="."){
       // console.log(path.slice(debut,fin));
+      if (is.arr(src)){
+        trouver= false
+        if (path.slice(debut,fin)<=src.length){
+          src = src[path.slice(debut,fin)]
+          debut += fin+1
+          trouver=true
+          break
+        }
+      }
       for (let [key] of Object.entries(src)){
         trouver= false
         if (path.slice(debut,fin)==key){
@@ -23,5 +33,5 @@ const get = (src=Object,path=String) =>{
   return typeof(src[path.slice(debut,path.length)])==undefined?undefined:src[path.slice(debut,path.length)]
 }
 
-
-console.log(get({ nested: { key: 'value' } }, 'nx.nx') );
+const t =(a)=>a+1
+console.log(get({ a: [{ b: t }] }, 'a.0.b'));
