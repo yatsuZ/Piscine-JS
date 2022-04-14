@@ -14,6 +14,5 @@ const get = (src=Object,path=String) =>{
   return src[path.slice(debut,path.length)]
 }
 
-// const src = { nested: { key: 'peekaboo' } }
-// const path = 'nested.key'
-// console.log(get(src, path) );// -> 'peekaboo'
+
+console.log(get({ nested: { key: 'value' } }, 'nx.nx') );
