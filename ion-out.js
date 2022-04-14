@@ -17,7 +17,7 @@ const ionOut = (S) =>{
     }
     s = S.slice(debut,S.length)
     if (r.test(s)){
-        b=s.replace(r,"")
+        b=s.replace(r,"t")
         l.push(b)
     }
     return l 
