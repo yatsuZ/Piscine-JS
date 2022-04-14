@@ -1,4 +1,4 @@
-const r = /ion?./g
+const r = /tion?./g
 
 const ionOut = (S) =>{
     let debut =0
@@ -10,11 +10,8 @@ const ionOut = (S) =>{
             s = S.slice(debut,fin)
             debut=fin+1
             if (r.test(s)){
-                b=s.replace(r,"")
+                b=s.replace(r,"t")
                 l.push(b)
-            }
-            else {
-                l.push(s)
             }
         }
     }
@@ -22,11 +19,9 @@ const ionOut = (S) =>{
     if (r.test(s)){
         b=s.replace(r,"")
         l.push(b)
-        }
-    else {
-        l.push(s)
-        }
+    }
     return l 
 }
 // console.log();
 // console.log(ionOut('attention, direction'))
+// console.log(ionOut('promotion, provision'), ['promot'])
