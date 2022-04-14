@@ -4,7 +4,7 @@ const ionOut = (S) =>{
     let debut =0
     let s = ""
     let l=[]
-    for (let fin = 0;fin<S.length;fin){
+    for (let fin = 0;fin<S.length;fin++){
         if (S[fin]==" "){
             s = S.slice(debut,fin)
             debut=fin+1
