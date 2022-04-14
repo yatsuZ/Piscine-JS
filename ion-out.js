@@ -1,4 +1,4 @@
-const r = /ion/g
+const r = /ion./g
 
 const ionOut = (S) =>{
     let debut =0
@@ -28,5 +28,5 @@ const ionOut = (S) =>{
         }
     return l 
 }
-// console.log();
-// console.log(ionOut('attention, direction'))
+console.log();
+console.log(ionOut('attention, direction'))
