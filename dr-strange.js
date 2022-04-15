@@ -3,11 +3,13 @@ const semaine = [
     "secondMonday","secondTuesday","secondWednesd","secondThursday","secondFriday","secondSaturday","secondSunday",
 ]
 const addWeek = (s)=>{
-    const ajd= (s.getFullYear()*365+s.getMonth()*30+s.getDate())%14
+    const ajd= ((s.getMonth()*30+s.getDate())%14)-1 
     console.log(ajd);
     for (let  i = 0;i<semaine.length;i++){
         if (i==ajd){
             return semaine[i]
+        }else if (ajd==-1){
+            return semaine[13]
         }
     }
 }
