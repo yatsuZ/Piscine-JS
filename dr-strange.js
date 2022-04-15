@@ -26,7 +26,7 @@ const bissextile = (year) =>{
 //samedi, 1 janvier 2000 decallage de 4
 const decalage = (d)=>{
     if (d<=1){
-        return 0
+        return -1
     }else{
         return (decalage(d-1)+bissextile(d))%7
     }
@@ -35,7 +35,7 @@ const decalage = (d)=>{
 
 //idée : prendre le nombre de jour qu'il y a 
 const addWeek = (s)=>{
-    let ajd= (bissextile(s.getFullYear())+nbr_de_Jour_par_Mois(s.getMonth())+s.getDate())%14
+    let ajd= (decalage(s.getFullYear())+nbr_de_Jour_par_Mois(s.getMonth())+s.getDate())%14
     for (let  i = 0;i<semaine.length;i++){
         if (i==ajd){
             return semaine[i]
