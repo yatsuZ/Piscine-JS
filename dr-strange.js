@@ -35,7 +35,7 @@ const decalage = (d)=>{
 
 //idée : prendre le nombre de jour qu'il y a 
 const addWeek = (s)=>{
-    let ajd= (decalage(s.getFullYear())+nbr_de_Jour_par_Mois(s.getMonth())+s.getDate())%14
+    let ajd= (decalage(s.getFullYear())+nbr_de_Jour_par_Mois(s.getMonth()+1)+s.getDate())%14
     for (let  i = 0;i<semaine.length;i++){
         if (i==ajd){
             return semaine[i]
@@ -49,6 +49,6 @@ const addWeek = (s)=>{
 // const wensday = new Date('2000-01-03')
 // console.log(wensday.getDate(),wensday.getMonth(),wensday.getFullYear(),wensday.getSeconds());
 // console.log(addWeek(wensday));
-// const secondMonday = new Date('2025-08-11')
-// console.log(secondMonday.getDate(),secondMonday.getMonth(),secondMonday.getFullYear(),secondMonday.getSeconds());
-// console.log(addWeek(secondMonday));
+const secondMonday = new Date('2025-08-11')
+console.log(secondMonday.getDate(),secondMonday.getMonth(),secondMonday.getFullYear(),secondMonday.getSeconds());
+console.log(addWeek(secondMonday));
