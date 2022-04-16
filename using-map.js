@@ -1,7 +1,7 @@
 const citiesOnly = (L) =>{
     let l = []
     for (let i =0;i<L.length;i++){
-        l+=[L[i].city]
+        l.push(L[i].city)
     }
-    return [l]
+    return l
 }
