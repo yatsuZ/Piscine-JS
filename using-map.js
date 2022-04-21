@@ -1,8 +1,9 @@
-const citiesOnly = (L) =>{
-    let l = []
-    l = L.map(x=> x.city )
-    return l
+const citiesOnly = (L = [] ) =>{
+    let l = [];
+    L.map(obj => l.push(obj['city']));
+    return l;
 }
+
 // console.log(citiesOnly([
 //     {
 //       city: 'Los Angeles',
